@@ -1,0 +1,13 @@
+{
+"scripts": {
+  "start": "concurrently \"npm run start:client\" \"npm run start:server\"",
+  "start:client": "cd client && npm start", 
+  "start:server": "cd server && npm run dev"
+},
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13"
+  }
+}
